@@ -8,7 +8,7 @@ ou
 $ npm i
 ```
 
-Após iniciá-lo, precisamos startar:
+Após a instalação precisamos iniciá-lo:
 
 ```bash
 $ npm run start
