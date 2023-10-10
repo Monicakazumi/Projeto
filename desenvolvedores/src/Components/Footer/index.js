@@ -8,10 +8,11 @@ export const Footer = () => {
       >
       <p
         style={{
+          fontFamily: 'Arial, Helvetica, sans-serif',
           color: '#001781',
           marginTop: 10,
           textAlign: 'center',
-          fontSize: 16,
+          fontSize: 14,
         }}
       ><strong>Desenvolvido por Mônica Kazumi</strong></p>
       </footer>

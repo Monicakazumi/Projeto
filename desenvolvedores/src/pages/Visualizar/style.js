@@ -9,6 +9,7 @@ export const Section = styled.section`
 
 export const H1 = styled.h1`
     color: #001781;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 30px;
     padding-top: 30px;

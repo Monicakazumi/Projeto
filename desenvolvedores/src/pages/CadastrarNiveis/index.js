@@ -75,7 +75,7 @@ export const CadastrarNiveis = () => {
 
         <Form onSubmit={cadastrarNivel}>
           <Label><strong>NIVEL: </strong></Label>
-          <Input type="text" name="nivel" placeholder="Seu Nível de Senioridade" onChange={valor} />
+          <Input type="text" name="nivel" placeholder="Seu Nível de Senioridade" onChange={valor} required />
           <br /><br />
           <Button type="submit" onClick={notify}>Cadastrar</Button>
           <ToastContainer />

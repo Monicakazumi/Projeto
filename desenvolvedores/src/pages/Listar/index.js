@@ -95,7 +95,7 @@ export const Listar = () => {
       </Table>
       <BtnVoltar>
         <Link to={"/"}>
-          <BtnCadastrar type="submit">Voltar</BtnCadastrar>
+          <BtnCadastrar type="submit">Home</BtnCadastrar>
         </Link>
       </BtnVoltar>
     </div >

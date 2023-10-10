@@ -77,22 +77,22 @@ export const Cadastrar = () => {
 
         <Form onSubmit={cadastroDev}>
           <Label><strong>NIVEL: </strong></Label>
-          <Input type="text" name="id_nivel" placeholder="Seu Nível de Senioridade" onChange={valores} />
+          <Input type="text" name="id_nivel" placeholder="Seu Nível de Senioridade" onChange={valores} required />
           <br />
           <Label><strong>NOME: </strong></Label>
-          <Input type="text" name="nome" placeholder="Seu Nome" onChange={valores} />
+          <Input type="text" name="nome" placeholder="Seu Nome" onChange={valores} required />
           <br />
           <Label><strong>SEXO: </strong></Label>
-          <Input type="text" name="sexo" placeholder="Seu Sexo" onChange={valores} />
+          <Input type="text" name="sexo" placeholder="Seu Sexo" onChange={valores} required />
           <br />
           <Label><strong>DATA DE NASCIMENTO: </strong></Label>
-          <Input type="date" name="data_nascimento" placeholder="Sua Data de Nascimento" onChange={valores} />
+          <Input type="date" name="data_nascimento" placeholder="Sua Data de Nascimento" onChange={valores} required />
           <br />
           <Label><strong>IDADE: </strong></Label>
-          <Input type="number" name="idade" placeholder="Sua Idade" onChange={valores} />
+          <Input type="number" name="idade" placeholder="Sua Idade" onChange={valores} required />
           <br />
           <Label><strong>HOBBY: </strong></Label>
-          <Input type="text" name="hobby" placeholder="Seu Hobby" onChange={valores} />
+          <Input type="text" name="hobby" placeholder="Seu Hobby" onChange={valores} required />
           <br /> <br />
           <Button type="submit" onClick={notify}>Cadastrar</Button>
           <ToastContainer />

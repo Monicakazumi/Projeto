@@ -23,13 +23,14 @@ export const Card = () => {
           }}
         >
           <img src={devs} width='100%' />
-          <h2
+          <h3
             style={{
+              fontFamily: 'Arial, Helvetica, sans-serif',
               color: '#001781',
               marginTop: 10,
               textAlign: 'center'
             }}
-          >Cadastro de Desenvolvedores</h2>
+          >Cadastro de Desenvolvedores</h3>
           <Link to={"/cadastrar"}>
             <button type="submit"
               style={{
@@ -53,13 +54,14 @@ export const Card = () => {
           }}
         >
           <img src={devs} width='100%' />
-          <h2
+          <h3
             style={{
+              fontFamily: 'Arial, Helvetica, sans-serif',
               color: '#001781',
               marginTop: 10,
               textAlign: 'center'
             }}
-          >Lista de Desenvolvedores</h2>
+          >Lista de Desenvolvedores</h3>
           <Link to={"/listar"}>
             <button type="submit"
               style={{
@@ -83,13 +85,14 @@ export const Card = () => {
           }}
         >
           <img src={devs} width='100%' />
-          <h2
+          <h3
             style={{
+              fontFamily: 'Arial, Helvetica, sans-serif',
               color: '#001781',
               marginTop: 10,
               textAlign: 'center'
             }}
-          >Cadastro de Níveis</h2>
+          >Cadastro de Níveis - Desenvolvedores</h3>
           <Link to={"/cadastrar_niveis"}>
             <button type="submit"
               style={{
@@ -113,13 +116,14 @@ export const Card = () => {
           }}
         >
           <img src={devs} width='100%' />
-          <h2
+          <h3
             style={{
+              fontFamily: 'Arial, Helvetica, sans-serif',
               color: '#001781',
               marginTop: 10,
               textAlign: 'center'
             }}
-          >Lista de Níveis - Desenvolvedores</h2>
+          >Lista de Níveis - Desenvolvedores</h3>
           <Link to={"/listar_niveis"}>
             <button type="submit"
               style={{

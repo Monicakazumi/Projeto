@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 export const H1 = styled.h1`
     color: #001781;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 30px;
 `
@@ -13,11 +14,13 @@ export const Table = styled.table`
     th {
         background-color: #c4c4d7;
         color: #001781;
+        font-family: Arial, Helvetica, sans-serif;
         padding: 10px;
     }
     td {
         background-color: #ebebeb;
         color: 3e3e3e;
+        font-family: Arial, Helvetica, sans-serif;
         padding: 8px
     }
 `

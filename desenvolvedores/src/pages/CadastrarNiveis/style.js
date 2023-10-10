@@ -10,6 +10,7 @@ export const Section = styled.section`
 
 export const H1 = styled.h1`
     color: #001781;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 30px;
 `
@@ -26,6 +27,7 @@ export const Form = styled.form`
 export const Label = styled.label`
     width: 100%;
     color: #001781;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 12px;
     margin-top: 6px;
     margin-botton: 16px;

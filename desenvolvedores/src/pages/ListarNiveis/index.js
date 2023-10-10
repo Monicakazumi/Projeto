@@ -85,7 +85,7 @@ export const ListarNiveis = () => {
       </Table>
       <BtnVoltar>
         <Link to={"/"}>
-          <BtnCadastrar type="submit">Voltar</BtnCadastrar>
+          <BtnCadastrar type="submit">Home</BtnCadastrar>
         </Link>
       </BtnVoltar>
     </div >
