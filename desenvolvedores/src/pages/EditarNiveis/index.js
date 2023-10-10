@@ -27,7 +27,7 @@ export const EditarNiveis = (props) => {
     const EditarNivel = async e => {
         e.preventDefault()
 
-        await fetch("http://localhost/Projeto/editar_niveis.php", {
+        await fetch("http://localhost/projeto/editar_niveis.php", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -58,7 +58,7 @@ export const EditarNiveis = (props) => {
 
     useEffect(() => {
         const getNiveis = async () => {
-            await fetch("http://localhost/Projeto/visualizar_niveis.php?id=" + id)
+            await fetch("http://localhost/projeto/visualizar_niveis.php?id=" + id)
                 .then((resposta) => resposta.json())
                 .then((respostaJson) => {
                     setNivel(respostaJson.niveis.nivel)

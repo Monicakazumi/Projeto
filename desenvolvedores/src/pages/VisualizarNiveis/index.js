@@ -9,7 +9,7 @@ export const VisualizarNiveis = (props) => {
 
     useEffect(() => {
         const getNiveis = async () => {
-            await fetch("http://localhost/Projeto/visualizar_niveis.php?id=" + id)
+            await fetch("http://localhost/projeto/visualizar_niveis.php?id=" + id)
             .then((resposta) => resposta.json())
             .then((respostaJson) => {
                 setDado(respostaJson.niveis)

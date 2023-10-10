@@ -14,14 +14,14 @@ export const Listar = () => {
   })
 
   const getDevs = async () => {
-    fetch("http://localhost/Projeto/listar.php")
+    fetch("http://localhost/projeto/listar.php")
       .then((resposta) => resposta.json())
       .then((respostaJson) => (console.log(respostaJson),
         setDevs(respostaJson)));
   }
 
   const apagar_dev = async (idDev) => {
-    await fetch("http://localhost/Projeto/apagar.php?id=" + idDev)
+    await fetch("http://localhost/projeto/apagar.php?id=" + idDev)
       .then((resposta) => resposta.json())
       .then((respostaJson) => {
         if (respostaJson.erro) {
@@ -57,7 +57,6 @@ export const Listar = () => {
           <BtnCadastrar type="submit">Cadastrar</BtnCadastrar>
         </Link>
       </BtnH1>
-
       <Table>
         <thead>
           <tr>

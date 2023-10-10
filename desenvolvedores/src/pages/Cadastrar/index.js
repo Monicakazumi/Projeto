@@ -36,7 +36,7 @@ export const Cadastrar = () => {
   const cadastroDev = async e => {
     e.preventDefault()
 
-    await fetch("http://localhost/Projeto/cadastrar.php", {
+    await fetch("http://localhost/projeto/cadastrar.php", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

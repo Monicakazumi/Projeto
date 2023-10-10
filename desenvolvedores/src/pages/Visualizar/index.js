@@ -9,7 +9,7 @@ export const Visualizar = (props) => {
 
     useEffect(() => {
         const getDev = async () => {
-            await fetch("http://localhost/Projeto/visualizar.php?id=" + id)
+            await fetch("http://localhost/projeto/visualizar.php?id=" + id)
             .then((resposta) => resposta.json())
             .then((respostaJson) => {
                 setDados(respostaJson.desenvolvedores)

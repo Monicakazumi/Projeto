@@ -31,7 +31,7 @@ export const CadastrarNiveis = () => {
   const cadastrarNivel = async e => {
     e.preventDefault()
 
-    await fetch("http://localhost/Projeto/cadastrar_niveis.php", {
+    await fetch("http://localhost/projeto/cadastrar_niveis.php", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

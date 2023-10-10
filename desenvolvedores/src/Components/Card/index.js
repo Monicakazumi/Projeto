@@ -82,7 +82,7 @@ export const Card = () => {
             width: 200,
           }}
         >
-          <img src={devs} width='108%' />
+          <img src={devs} width='100%' />
           <h2
             style={{
               color: '#001781',

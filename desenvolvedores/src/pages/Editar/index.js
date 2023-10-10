@@ -32,7 +32,7 @@ export const Editar = (props) => {
     const editarDevs = async e => {
         e.preventDefault()
 
-        await fetch("http://localhost/Projeto/editar.php", {
+        await fetch("http://localhost/projeto/editar.php", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -63,7 +63,7 @@ export const Editar = (props) => {
 
     useEffect(() => {
         const getDev = async () => {
-            await fetch("http://localhost/Projeto/visualizar.php?id=" + id)
+            await fetch("http://localhost/projeto/visualizar.php?id=" + id)
                 .then((resposta) => resposta.json())
                 .then((respostaJson) => {
                     setId_nivel(respostaJson.desenvolvedores.id_nivel)

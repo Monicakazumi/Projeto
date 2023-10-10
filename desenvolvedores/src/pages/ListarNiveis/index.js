@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from 'react'
 
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
 import { Table, H1, BtnApagar, BtnVisualizar, BtnEditar, BtnCadastrar, BtnH1, BtnVoltar } from './style'
 import { Link } from 'react-router-dom';
 
@@ -16,23 +13,15 @@ export const ListarNiveis = () => {
     mensagem: ''
   })
 
-  const notify = () => {
-    if (status.type === 'erro') {
-      toast(<p>{status.mensagem}</p>);
-    } else if (status.type === 'success') {
-      toast(<p>{status.mensagem}</p>);
-    }
-  }
-
   const getNiveis= async () => {
-    fetch("http://localhost/Projeto/listar_niveis.php")
+    fetch("http://localhost/projeto/listar_niveis.php")
       .then((resposta) => resposta.json())
       .then((respostaJson) => (console.log(respostaJson),
         setNiveis(respostaJson)));
   }
 
   const apagar_nivel= async (idNivel) => {
-    await fetch("http://localhost/Projeto/apagar_niveis.php?id=" + idNivel)
+    await fetch("http://localhost/projeto/apagar_niveis.php?id=" + idNivel)
       .then((resposta) => resposta.json())
       .then((respostaJson) => {
         if (respostaJson.erro) {
@@ -45,8 +34,8 @@ export const ListarNiveis = () => {
             type: 'success',
             mensagem: respostaJson.mensagem
           })
-          getNiveis()
         }
+        getNiveis()
       }).catch(() => {
         setStatus({
           type: 'erro',

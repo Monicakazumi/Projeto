@@ -1,14 +1,12 @@
 import React from 'react'
 
 import { H1, Tela } from './style'
-import { Card } from '../Card';
-import { Header } from '../Header';
-import { Footer } from '../Footer';
+import { Card } from '../../Components/Card';
+import { Header } from '../../Components/Header';
+import { Footer } from '../../Components/Footer';
 
 
 export const Home = () => {
-
-    
 
   return (
     <>
